@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deserts Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Desserts
+      <img src="assets/images/cake-candles-solid.svg">
+    </h1>
+    <div class="content">
+      <div class="desserts-grid">
+        <div class="dessert-card">
+          <img src="assets/images/image-waffle-desktop.jpg" alt="Waffle">
+          <h3>Waffle</h3>
+          <p>Waffle with Berries</p>
+          <span class="price">$6.00</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-creme-brulee-desktop.jpg" alt="Custard">
+          <h3>Custard Éclair</h3>
+          <p>Vanilla Bean Custard</p>
+          <span class="price">$5.50</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-macaron-desktop.jpg" alt="Macarons">
+          <h3>Macaron Mix</h3>
+          <p>Macaron Mix of Five</p>
+          <span class="price">$6.00</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-tiramisu-desktop.jpg" alt="Tiramisu">
+          <h3>Tiramisu</h3>
+          <p>Classic Tiramisu</p>
+          <span class="price">$6.00</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-baklava-desktop.jpg" alt="Baklava">
+          <h3>Baklava</h3>
+          <p>Pistachio Baklava</p>
+          <span class="price">$4.00</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-meringue-desktop.jpg" alt="Lemon Pie">
+          <h3>Pie</h3>
+          <p>Lemon Meringue Pie</p>
+          <span class="price">$5.00</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-cake-desktop.jpg" alt="Lemon Pie">
+          <h3>Cake</h3>
+          <p>Red Velvet Cake</p>
+          <span class="price">$4.50</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-brownie-desktop.jpg" alt="Lemon Pie">
+          <h3>Brownie</h3>
+          <p>Salted Caramel Brownie</p>
+          <span class="price">$4.50</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="dessert-card">
+          <img src="assets/images/image-panna-cotta-desktop.jpg" alt="Lemon Pie">
+          <h3>Panna Cotta</h3>
+          <p>Vanilla Panna Cotta</p>
+          <span class="price">$6.50</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="cart-section">
+        <h2><i class="fa-solid fa-cart-plus"></i> Your Cart (0)</h2>
+        <div class="updated-cart"></div>
+        <img src="assets/images/illustration-empty-cart.svg" alt="Cart-Icon" class="cart-image">
+        <div class="order-summary" style="display: none;">
+          <p class="order-total">Order Total: <span>$0.00</span></p>
+          <button class="confirm-order">Confirm Order</button>
+          <p class="carbon-neutral">This is a carbon-neutral delivery<img src="assets/images/icon-carbon-neutral.svg"
+              class="carbon-img"></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <h2><span class="check-icon"><i class="fa fa-check"></i></span> Order Confirmed</h2>
+        <p class="description-enjoy">We hope you enjoy your food!</p>
+        <div class="order-details">
+        </div>
+        <p class="order-total">Order Total: <span id="order-total-amount">$0.00</span></p>
+        <button class="start-new-order">Start New Order</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
